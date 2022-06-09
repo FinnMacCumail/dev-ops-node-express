@@ -1,0 +1,28 @@
+{
+  "name": "dev-ops-node-express",
+  "version": "1.0.0",
+  "description": "tutorial from https://www.youtube.com/watch?v=9zUHg7xjIqQ&ab_channel=freeCodeCamp.org",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinnMacCumail/dev-ops-node-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FinnMacCumail/dev-ops-node-express/issues"
+  },
+  "homepage": "https://github.com/FinnMacCumail/dev-ops-node-express#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
