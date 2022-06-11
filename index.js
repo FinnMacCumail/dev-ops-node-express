@@ -1,12 +1,13 @@
 const express = require("express");
 const { default: mongoose } = require("mongoose");
 const momgoose = require("mongoose");
-const {MONGO_USER, MONGO_PASSWORD, MONGO_IP , MONO_PORT} = require("./config/config");
+const {MONGO_USER, MONGO_PASSWORD, MONGO_IP , MONGO_PORT} = require("./config/config");
 
 const app = express();
 
 mongoose
-    .connect(`mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONO_PORT}/?authSource=admin`)
+    .connect(`mongodb://${MONGO_USER}:${MONGO_PASSWORD}@${MONGO_IP}:${MONGO_PORT}/?authSource=admin`)
+    //.connect("mongodb://derm:vidal*12@mongo:27017/?authSource=admin")
     .then(() => console.log("successfully connected to mongo database"))
     .catch((e) => console.log(e));
 
